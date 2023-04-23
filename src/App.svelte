@@ -55,6 +55,10 @@
         { date: '2023-04-22', value: 127 },
         { date: '2023-04-23', value: 132 },
       ],
+    },
+    metadata: {
+      alltimeperformance: { value: 66, type: 'percent' },
+      ytdperformance: { value: 33, type: 'percent' },
     }
   };
 
@@ -92,8 +96,8 @@
 
 <TailwindCss />
 
-<div class="flex w-screen h-screen bg-indigo-400">
-  <div class="container m-auto w-5/6 h-5/6 bg-white">
+<div class="flex w-screen h-screen bg-light-accent">
+  <div class="container m-8 bg-light-shades border-4 border-dark-shades rounded-lg">
     {#if loading == true}
     <LoadingIndicator />
     {:else if loading == 'failed'}
